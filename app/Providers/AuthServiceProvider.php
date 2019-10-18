@@ -28,5 +28,13 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('admin-user', function($user){
             return $user->hasRole('admin');
         });
+
+        Gate::define('update-comment', function ($user, $comment) {
+            return ($user->id == $comment->user_id);
+        });
+
+        Gate::define('delete-comment', function ($user, $comment) {
+            return ($user->id == $comment->user_id) || $user->hasRole('admin');
+        });
     }
 }

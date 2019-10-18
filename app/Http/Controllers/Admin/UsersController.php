@@ -50,7 +50,7 @@ class UsersController extends Controller
     {
         $user->roles()->sync($request->roles);
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('admin.users.index')->with('success','User updated successfully!');
     }
 
     /**
@@ -64,6 +64,6 @@ class UsersController extends Controller
         $user->roles()->detach();
         $user->delete();
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('admin.users.index')->with('success','User deleted successfully!');
     }
 }

@@ -41,11 +41,8 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Role');
     }
 
-    public function hasAnyRoles($roles){
-        if($this->roles()->whereIn('name', $roles)->first()) {
-            return true;
-        }
-        return false;
+        public function comments(){
+        return $this->belongsToMany('App\Comment');
     }
 
     public function hasRole($role){
