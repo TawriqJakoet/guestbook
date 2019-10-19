@@ -1,8 +1,8 @@
 ## Setup Instructions
 
 1. Clone project
-2. composer up in project root folder
-3. npm install in project root folder
+2. "composer up" in project root folder
+3. "npm install" in project root folder
 
 #####################
 
