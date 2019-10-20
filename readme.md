@@ -8,7 +8,12 @@
 6. run "php artisan migrate" in project root
 7. run "php artisan db:seed" in project root
 8. setup your http config and hosts
+9. login with an account:
+    u: admin@gmail.com 
+    p: password
 
+    u: guest@gmail.com 
+    p: password
 #####################
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
