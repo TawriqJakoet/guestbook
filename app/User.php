@@ -37,14 +37,17 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    // A user has many App\Role
     public function roles(){
         return $this->belongsToMany('App\Role');
     }
 
-        public function comments(){
+    // A user has many App\Comment
+    public function comments(){
         return $this->belongsToMany('App\Comment');
     }
 
+    // Checks if the user has a specified role
     public function hasRole($role){
         if($this->roles()->where('name', $role)->first()) {
             return true;

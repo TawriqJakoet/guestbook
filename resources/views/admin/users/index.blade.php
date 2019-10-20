@@ -25,7 +25,7 @@
                                     <td>{{ implode(', ', $user->roles()->get()->pluck('name')->toArray()) }}</td>
                                     <td>
                                         @can('admin-user')
-                                            <a href="{{ route('admin.users.edit', $user->id) }}"><button type="button" class="btn btn-primary float-left">Edit</button></a>
+                                            <a href="{{ route('admin.users.edit', $user->id) }}"><button type="button" class="btn btn-primary float-left">Edit Roles</button></a>
 
                                             <form method="POST" action="{{ route('admin.users.destroy', $user->id) }}" class="float-left">
                                                 @csrf

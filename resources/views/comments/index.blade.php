@@ -21,6 +21,7 @@
                             ])@endcomponent
                         @endforeach
                     @endforeach
+                    
                     <div class="row">
                         <div class="col-sm">
                             <a href="{{ route('comments.create') }}"><button type="button" class="btn btn-primary float-right">Add Comment</button></a>

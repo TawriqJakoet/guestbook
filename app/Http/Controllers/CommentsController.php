@@ -65,7 +65,6 @@ class CommentsController extends Controller
         Comment::create([
             'user_id' => Auth::user()->id,
             'comment' => $request['comment'],
-            // 'reply_to_comment_id' => $request['reply_to_comment_id'],
         ]);
 
         return redirect()->route('comments.index')->with('success','Comment added successfully!');
