@@ -1,8 +1,13 @@
 ## Setup Instructions
 
 1. Clone project
-2. "composer up" in project root folder
-3. "npm install" in project root folder
+2. run "composer up" in project root
+3. run "npm install" in project root
+4. create a "guestbook" database
+5. configure database settings in .env file
+6. run "php artisan migrate" in project root
+7. run "php artisan db:seed" in project root
+8. setup your http config and hosts
 
 #####################
 
